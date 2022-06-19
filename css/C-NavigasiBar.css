@@ -1,0 +1,112 @@
+:root {
+    /*      Warna yang dapat di panggil        */
+    --text-gray: #3f4954;
+    --text-light: #686666da;
+    --bg-color: #0f0f0f;
+    --white: #ffffff;
+    --midnight: #104f55;
+    --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    /*    font-family   */
+    --Abel: "Abel", cursive;
+    --Anton: "Anton", cursive;
+    --Josefin: "Josefin", cursive;
+    --Lexend: "Lexend", cursive;
+    --Livvic: "Livvic", cursive;
+}
+
+
+/*Mengatur Navigasi Bar*/
+
+.Navigasi {
+    background: #e17055;
+    padding: 0.2rem;
+    height: 0;
+    min-height: 10vh;
+    overflow: hidden;
+}
+
+.Navigasi .NavMenu {
+    justify-content: space-between;
+}
+
+.Navigasi .NavTitle a {
+    margin-left: 20px;
+    padding: 0.8rem 0;
+    display: block;
+    font-family: var(--Livvic);
+    font-size: 1.6rem;
+}
+
+.NavRow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.Navigasi .NavGrup {
+    display: flex;
+    margin: 0;
+}
+
+.Navigasi .NavGrup .NavItem {
+    padding: 1.3rem 1rem;
+    font-size: 1.1rem;
+    font-family: var(--Abel);
+    position: relative;
+}
+
+.Navigasi .NavGrup .NavItem:hover {
+    background-color: var(--midnight);
+}
+
+.Navigasi .NavGrup .NavItem:hover a {
+    color: white;
+}
+
+.Navigasi .NavSocial {
+    padding: 1.4rem 0;
+}
+
+.Navigasi .NavSocial i {
+    padding: 0 1.5rem;
+}
+
+.Navigasi .NavSocial i:hover {
+    color: var(--midnight);
+}
+
+.Navigasi .toggle-collapse {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    cursor: pointer;
+    display: none;
+}
+
+.Navigasi .toggle-collapse .toggle-icons {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.8rem;
+}
+
+.Navigasi .toggle-collapse .toggle-icons i {
+    font-size: 1.4rem;
+    color: white;
+}
+
+.collapse {
+    height: 20rem;
+}
+
+
+/*X Mengatur Navigasi Bar X*/
+
+@media only screen and (max-width: 750px) {
+    .Navigasi .NavMenu,
+    .Navigasi .NavGrup {
+        flex-direction: column;
+    }
+    .Navigasi .toggle-collapse {
+        display: initial;
+    }
+}

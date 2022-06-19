@@ -1,0 +1,44 @@
+@import url("./font.css");
+html,
+body {
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+
+/*========= classes =========*/
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    padding: 5px;
+}
+
+h1 {
+    font-family: var(--Josefin);
+}
+
+h2 {
+    font-family: var(--Livvic);
+}
+
+h3 {
+    font-family: var(--Livvic);
+    text-align: justify;
+}
+
+button.btncari {
+    border: none;
+    border-radius: 2rem;
+    font-size: 1.5rem;
+    padding: 1.3rem 7rem;
+    cursor: pointer;
+}
+
+
+/*========X classes X========*/

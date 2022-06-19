@@ -1,0 +1,182 @@
+:root {
+    /*      Warna yang dapat di panggil        */
+    --text-gray: #3f4954;
+    --text-light: #686666da;
+    --bg-color: #0f0f0f;
+    --white: #ffffff;
+    --midnight: #104f55;
+    --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    /*    font-family   */
+    --Abel: "Abel", cursive;
+    --Anton: "Anton", cursive;
+    --Josefin: "Josefin", cursive;
+    --Lexend: "Lexend", cursive;
+    --Livvic: "Livvic", cursive;
+}
+
+
+/*========= classes =========*/
+
+h1.judul {
+    text-align: center;
+    font-size: 2rem;
+}
+
+h3.judul {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+h1.judulbatik {
+    font-size: 2.5rem;
+}
+
+h3.isijudul {
+    font-size: 1.4rem;
+}
+
+
+/*========X classes X========*/
+
+
+/*========= Halaman Utama =========*/
+
+main .Blog {
+    background: url(../assets/batik1.jpg);
+    margin-top: 4px;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+main .Blog .BackgroundWeb {
+    padding-top: 8rem;
+    color: var(--white);
+    text-align: center;
+}
+
+main .Blog .btncari {
+    margin: 1rem;
+    border: 4px solid var(--white);
+    color: var(--white);
+    background: #e17055;
+}
+
+main .Blog .btncari:hover {
+    background: transparent;
+    border: 5px solid var(--white);
+    color: var(--white);
+}
+
+main .SliderCarousel {
+    background: white;
+    background-repeat: no-repeat;
+    height: 80vh;
+    width: 100%;
+}
+
+main .SliderCarousel .blog-content {
+    padding: 0;
+}
+
+main .blog-post .blog-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 0 0 2rem 2rem;
+    width: 80%;
+    margin: 3rem 2rem;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+}
+
+main .blog-content .blog-title {
+    padding: 0.2rem 0;
+}
+
+main .blog-content .btn-blog {
+    padding: 0.7rem 2rem;
+    background: #e17055;
+    margin: 0.5rem;
+    border-radius: 2rem;
+    border: white;
+}
+
+main .blog-content span {
+    display: block;
+    padding: 0.2rem;
+}
+
+.Container {
+    margin: 3vw 5vw;
+}
+
+main .InfoBatik {
+    margin-top: 25vh;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding: 1.3rem;
+    border-radius: 2rem;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+}
+
+main .Footer {
+    background: #e17055;
+    margin-top: 4vw;
+    min-height: 9vh;
+    overflow: hidden;
+    text-align: center;
+    padding: 1rem 1rem;
+    color: white;
+}
+
+
+/*========X Halaman Utama X========*/
+
+@media only screen and (max-width: 1380px) {
+    main .InfoBatik {
+        margin-top: 8rem;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    main .InfoBatik {
+        margin-top: 9rem;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    main .InfoBatik {
+        margin-top: 14rem;
+    }
+}
+
+@media only screen and (max-width: 840px) {
+    main .InfoBatik {
+        margin-top: 10rem;
+    }
+}
+
+@media only screen and (max-width: 556px) {
+    main .InfoBatik {
+        margin-top: 20rem;
+    }
+    main .isijudul {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    main .InfoBatik {
+        margin-top: 14rem;
+    }
+}
+
+@media only screen and (max-width: 230px) {
+    main .InfoBatik {
+        margin-top: 1rem;
+    }
+    main .isijudul {
+        font-size: 15px;
+    }
+}
